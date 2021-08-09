@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5064294126C133CD00F4EADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064294026C133CD00F4EADD /* AppDelegate.swift */; };
 		5064294326C133CD00F4EADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064294226C133CD00F4EADD /* SceneDelegate.swift */; };
-		5064294526C133CD00F4EADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064294426C133CD00F4EADD /* ViewController.swift */; };
+		5064294526C133CD00F4EADD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064294426C133CD00F4EADD /* MainViewController.swift */; };
 		5064294826C133CD00F4EADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064294626C133CD00F4EADD /* Main.storyboard */; };
 		5064294A26C133CE00F4EADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5064294926C133CE00F4EADD /* Assets.xcassets */; };
 		5064294D26C133CE00F4EADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064294B26C133CE00F4EADD /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		5064293D26C133CD00F4EADD /* Hotel List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5064294026C133CD00F4EADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5064294226C133CD00F4EADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5064294426C133CD00F4EADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5064294426C133CD00F4EADD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5064294726C133CD00F4EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5064294926C133CE00F4EADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5064294C26C133CE00F4EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		5064293F26C133CD00F4EADD /* Hotel List */ = {
 			isa = PBXGroup;
 			children = (
-				5064294026C133CD00F4EADD /* AppDelegate.swift */,
-				5064294226C133CD00F4EADD /* SceneDelegate.swift */,
-				5064294426C133CD00F4EADD /* ViewController.swift */,
-				5064294626C133CD00F4EADD /* Main.storyboard */,
-				5064294926C133CE00F4EADD /* Assets.xcassets */,
-				5064294B26C133CE00F4EADD /* LaunchScreen.storyboard */,
-				5064294E26C133CE00F4EADD /* Info.plist */,
+				5064295726C13DF800F4EADD /* Views+ViewModels */,
+				5064295626C13D5400F4EADD /* SuportFiles */,
+				5064295526C13D2700F4EADD /* Storyboards */,
+				5064295426C1397E00F4EADD /* Models */,
 			);
 			path = "Hotel List";
+			sourceTree = "<group>";
+		};
+		5064295426C1397E00F4EADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5064295526C13D2700F4EADD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5064294626C133CD00F4EADD /* Main.storyboard */,
+				5064294B26C133CE00F4EADD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5064295626C13D5400F4EADD /* SuportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5064294026C133CD00F4EADD /* AppDelegate.swift */,
+				5064294926C133CE00F4EADD /* Assets.xcassets */,
+				5064294E26C133CE00F4EADD /* Info.plist */,
+				5064294226C133CD00F4EADD /* SceneDelegate.swift */,
+			);
+			path = SuportFiles;
+			sourceTree = "<group>";
+		};
+		5064295726C13DF800F4EADD /* Views+ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5064295826C13E2E00F4EADD /* Main */,
+			);
+			path = "Views+ViewModels";
+			sourceTree = "<group>";
+		};
+		5064295826C13E2E00F4EADD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5064294426C133CD00F4EADD /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5064294526C133CD00F4EADD /* ViewController.swift in Sources */,
+				5064294526C133CD00F4EADD /* MainViewController.swift in Sources */,
 				5064294126C133CD00F4EADD /* AppDelegate.swift in Sources */,
 				5064294326C133CD00F4EADD /* SceneDelegate.swift in Sources */,
 			);
@@ -286,15 +326,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JGHCMYT3QP;
-				INFOPLIST_FILE = "Hotel List/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hotel List/SuportFiles/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dushan.Hotel-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +346,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JGHCMYT3QP;
-				INFOPLIST_FILE = "Hotel List/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hotel List/SuportFiles/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dushan.Hotel-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
