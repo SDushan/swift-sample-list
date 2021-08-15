@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		5064295E26C187C500F4EADD /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295D26C187C500F4EADD /* Hotel.swift */; };
 		5064296026C18D3300F4EADD /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295F26C18D3300F4EADD /* ImageSet.swift */; };
 		5064296426C1BC3700F4EADD /* MainCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064296326C1BC3700F4EADD /* MainCustomCell.swift */; };
+		50F2976C26C905EE00A923EB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F2976B26C905EE00A923EB /* Extentions.swift */; };
 		6CA85F67D9168E7946B0E71F /* Pods_Hotel_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C540211BD00084348B87A9C6 /* Pods_Hotel_List.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		5064295D26C187C500F4EADD /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		5064295F26C18D3300F4EADD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
 		5064296326C1BC3700F4EADD /* MainCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomCell.swift; sourceTree = "<group>"; };
+		50F2976B26C905EE00A923EB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		7DB291934A5D623271ECA4A9 /* Pods-Hotel List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotel List.release.xcconfig"; path = "Target Support Files/Pods-Hotel List/Pods-Hotel List.release.xcconfig"; sourceTree = "<group>"; };
 		A30FBEF9076426A20C14757F /* Pods-Hotel List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotel List.debug.xcconfig"; path = "Target Support Files/Pods-Hotel List/Pods-Hotel List.debug.xcconfig"; sourceTree = "<group>"; };
 		C540211BD00084348B87A9C6 /* Pods_Hotel_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotel_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +58,6 @@
 				A30FBEF9076426A20C14757F /* Pods-Hotel List.debug.xcconfig */,
 				7DB291934A5D623271ECA4A9 /* Pods-Hotel List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +90,7 @@
 		5064293F26C133CD00F4EADD /* Hotel List */ = {
 			isa = PBXGroup;
 			children = (
+				50F2976A26C905AC00A923EB /* Utilities */,
 				5064295726C13DF800F4EADD /* Views+ViewModels */,
 				5064295626C13D5400F4EADD /* SuportFiles */,
 				5064295526C13D2700F4EADD /* Storyboards */,
@@ -142,6 +144,14 @@
 				5064296326C1BC3700F4EADD /* MainCustomCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		50F2976A26C905AC00A923EB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				50F2976B26C905EE00A923EB /* Extentions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +272,7 @@
 				5064295E26C187C500F4EADD /* Hotel.swift in Sources */,
 				5064294526C133CD00F4EADD /* MainViewController.swift in Sources */,
 				5064294126C133CD00F4EADD /* AppDelegate.swift in Sources */,
+				50F2976C26C905EE00A923EB /* Extentions.swift in Sources */,
 				5064294326C133CD00F4EADD /* SceneDelegate.swift in Sources */,
 				5064295C26C186FA00F4EADD /* MainVM.swift in Sources */,
 				5064296426C1BC3700F4EADD /* MainCustomCell.swift in Sources */,
