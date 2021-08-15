@@ -6,5 +6,6 @@ target 'Hotel List' do
   use_frameworks!
 
   # Pods for Hotel List
+  pod 'SDWebImage'
 
 end

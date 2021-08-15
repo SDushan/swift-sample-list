@@ -17,6 +17,7 @@
 		5064295E26C187C500F4EADD /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295D26C187C500F4EADD /* Hotel.swift */; };
 		5064296026C18D3300F4EADD /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295F26C18D3300F4EADD /* ImageSet.swift */; };
 		5064296426C1BC3700F4EADD /* MainCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064296326C1BC3700F4EADD /* MainCustomCell.swift */; };
+		6CA85F67D9168E7946B0E71F /* Pods_Hotel_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C540211BD00084348B87A9C6 /* Pods_Hotel_List.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		5064295D26C187C500F4EADD /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		5064295F26C18D3300F4EADD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
 		5064296326C1BC3700F4EADD /* MainCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomCell.swift; sourceTree = "<group>"; };
+		7DB291934A5D623271ECA4A9 /* Pods-Hotel List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotel List.release.xcconfig"; path = "Target Support Files/Pods-Hotel List/Pods-Hotel List.release.xcconfig"; sourceTree = "<group>"; };
+		A30FBEF9076426A20C14757F /* Pods-Hotel List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotel List.debug.xcconfig"; path = "Target Support Files/Pods-Hotel List/Pods-Hotel List.debug.xcconfig"; sourceTree = "<group>"; };
+		C540211BD00084348B87A9C6 /* Pods_Hotel_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotel_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA85F67D9168E7946B0E71F /* Pods_Hotel_List.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113DFE89285E396A68230A8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A30FBEF9076426A20C14757F /* Pods-Hotel List.debug.xcconfig */,
+				7DB291934A5D623271ECA4A9 /* Pods-Hotel List.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1A82F9C213C018736D1F1ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C540211BD00084348B87A9C6 /* Pods_Hotel_List.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5064293426C133CD00F4EADD = {
 			isa = PBXGroup;
 			children = (
 				5064293F26C133CD00F4EADD /* Hotel List */,
 				5064293E26C133CD00F4EADD /* Products */,
+				113DFE89285E396A68230A8B /* Pods */,
+				1A82F9C213C018736D1F1ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5064295126C133CE00F4EADD /* Build configuration list for PBXNativeTarget "Hotel List" */;
 			buildPhases = (
+				4D10C36C4FF9AEC27244AC8D /* [CP] Check Pods Manifest.lock */,
 				5064293926C133CD00F4EADD /* Sources */,
 				5064293A26C133CD00F4EADD /* Frameworks */,
 				5064293B26C133CD00F4EADD /* Resources */,
+				A152F1760E6610585C2ADBC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +210,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D10C36C4FF9AEC27244AC8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hotel List-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A152F1760E6610585C2ADBC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hotel List/Pods-Hotel List-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hotel List/Pods-Hotel List-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hotel List/Pods-Hotel List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5064293926C133CD00F4EADD /* Sources */ = {
@@ -339,6 +408,7 @@
 		};
 		5064295226C133CE00F4EADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30FBEF9076426A20C14757F /* Pods-Hotel List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +429,7 @@
 		};
 		5064295326C133CE00F4EADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB291934A5D623271ECA4A9 /* Pods-Hotel List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
