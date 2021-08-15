@@ -13,6 +13,10 @@
 		5064294826C133CD00F4EADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064294626C133CD00F4EADD /* Main.storyboard */; };
 		5064294A26C133CE00F4EADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5064294926C133CE00F4EADD /* Assets.xcassets */; };
 		5064294D26C133CE00F4EADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064294B26C133CE00F4EADD /* LaunchScreen.storyboard */; };
+		5064295C26C186FA00F4EADD /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295B26C186FA00F4EADD /* MainVM.swift */; };
+		5064295E26C187C500F4EADD /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295D26C187C500F4EADD /* Hotel.swift */; };
+		5064296026C18D3300F4EADD /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064295F26C18D3300F4EADD /* ImageSet.swift */; };
+		5064296426C1BC3700F4EADD /* MainCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064296326C1BC3700F4EADD /* MainCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5064294926C133CE00F4EADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5064294C26C133CE00F4EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5064294E26C133CE00F4EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5064295B26C186FA00F4EADD /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		5064295D26C187C500F4EADD /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		5064295F26C18D3300F4EADD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
+		5064296326C1BC3700F4EADD /* MainCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,8 @@
 		5064295426C1397E00F4EADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5064295D26C187C500F4EADD /* Hotel.swift */,
+				5064295F26C18D3300F4EADD /* ImageSet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				5064294426C133CD00F4EADD /* MainViewController.swift */,
+				5064295B26C186FA00F4EADD /* MainVM.swift */,
+				5064296326C1BC3700F4EADD /* MainCustomCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -177,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5064296026C18D3300F4EADD /* ImageSet.swift in Sources */,
+				5064295E26C187C500F4EADD /* Hotel.swift in Sources */,
 				5064294526C133CD00F4EADD /* MainViewController.swift in Sources */,
 				5064294126C133CD00F4EADD /* AppDelegate.swift in Sources */,
 				5064294326C133CD00F4EADD /* SceneDelegate.swift in Sources */,
+				5064295C26C186FA00F4EADD /* MainVM.swift in Sources */,
+				5064296426C1BC3700F4EADD /* MainCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
