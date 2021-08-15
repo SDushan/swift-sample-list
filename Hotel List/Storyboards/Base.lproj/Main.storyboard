@@ -16,42 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-11-3Wg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-11-3Wg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="4Aw-Rr-Yes" customClass="MainCustomCell" customModule="Hotel_List" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="4Aw-Rr-Yes" customClass="MainCustomCell" customModule="Hotel_List" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Aw-Rr-Yes" id="N8b-QN-I2Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HwS-Au-5iU">
-                                                    <rect key="frame" x="20" y="10" width="60" height="60"/>
+                                                    <rect key="frame" x="20" y="10" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="KkF-WA-aXJ"/>
-                                                        <constraint firstAttribute="height" constant="60" id="VnV-yA-Azh"/>
+                                                        <constraint firstAttribute="width" constant="50" id="KkF-WA-aXJ"/>
+                                                        <constraint firstAttribute="height" constant="50" id="VnV-yA-Azh"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer. masksToBounds" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer. cornerRadius">
-                                                            <integer key="value" value="20"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stF-PM-jzr">
-                                                    <rect key="frame" x="90" y="0.0" width="265" height="80"/>
+                                                    <rect key="frame" x="80" y="0.0" width="275" height="70"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3C-t6-vaP">
-                                                            <rect key="frame" x="0.0" y="10" width="265" height="21"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <rect key="frame" x="0.0" y="10" width="275" height="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqS-DI-j7g">
-                                                            <rect key="frame" x="0.0" y="41" width="265" height="19.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <rect key="frame" x="0.0" y="32" width="275" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -62,7 +62,7 @@
                                                         <constraint firstItem="D3C-t6-vaP" firstAttribute="top" secondItem="stF-PM-jzr" secondAttribute="top" constant="10" id="EJ0-Zh-ggO"/>
                                                         <constraint firstAttribute="trailing" secondItem="D3C-t6-vaP" secondAttribute="trailing" id="KzL-OV-wq6"/>
                                                         <constraint firstAttribute="trailing" secondItem="OqS-DI-j7g" secondAttribute="trailing" id="MRE-aJ-wbh"/>
-                                                        <constraint firstItem="OqS-DI-j7g" firstAttribute="top" secondItem="D3C-t6-vaP" secondAttribute="bottom" constant="10" id="aCE-cQ-Guh"/>
+                                                        <constraint firstItem="OqS-DI-j7g" firstAttribute="top" secondItem="D3C-t6-vaP" secondAttribute="bottom" constant="5" id="aCE-cQ-Guh"/>
                                                         <constraint firstItem="OqS-DI-j7g" firstAttribute="leading" secondItem="stF-PM-jzr" secondAttribute="leading" id="e2h-ij-zE0"/>
                                                     </constraints>
                                                 </view>

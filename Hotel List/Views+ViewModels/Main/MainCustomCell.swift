@@ -20,5 +20,11 @@ class MainCustomCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func cellConfiguration(item: Hotel) {
+        name.text = item.title;
+        address.text = item.address;
+        thumbnail.setImageWithUrl(urlString: item.image?.small ?? "", placeholderImage: UIImage(named: "placeholder")!)
+    }
 
 }
