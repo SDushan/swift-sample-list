@@ -31,5 +31,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsViewController
+        detailsVC.item = mainVM.data[indexPath.row]
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    
 }
 

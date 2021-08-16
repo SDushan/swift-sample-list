@@ -108,6 +108,21 @@
             </objects>
             <point key="canvasLocation" x="1060" y="118.29085457271366"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="g3F-7w-kN1">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVC" id="AE1-QQ-z6I" customClass="DetailsViewController" customModule="Hotel_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZZS-Mu-A8K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GT5-AR-yKa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ks4-7z-GU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="118"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DVW-p2-cEM">
             <objects>
