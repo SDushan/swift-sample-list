@@ -1,5 +1,5 @@
 //
-//  DetailsViewController.swift
+//  DetailsVC.swift
 //  Hotel List
 //
 //  Created by Dushan on 2021-08-15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+class DetailsVC: UIViewController {
     
     var item = Hotel()
     

@@ -1,5 +1,5 @@
 //
-//  MainCustomCell.swift
+//  MainTVC.swift
 //  Hotel List
 //
 //  Created by Dushan on 2021-08-10.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainCustomCell: UITableViewCell {
+class MainTVC: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var address: UILabel!
