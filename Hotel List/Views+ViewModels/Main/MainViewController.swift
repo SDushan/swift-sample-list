@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RappleProgressHUD
 
 class MainViewController: UIViewController {
     
@@ -51,7 +52,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
 extension MainViewController {
     
     func itemsRequest() {
+        RappleActivityIndicatorView.startAnimating()
         mainVM.itemsNetworkRequest(completion: { success in
+            RappleActivityIndicatorView.stopAnimation()
             if success {
                 self.tableview.reloadData()
             }
