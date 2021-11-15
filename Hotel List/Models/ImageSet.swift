@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageSet {
+struct ImageSet: Codable {
     
     var small: String?
     var medium: String?

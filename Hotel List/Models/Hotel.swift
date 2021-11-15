@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Hotel {
+struct Hotel: Codable {
     
     var id: Int?
     var title: String?

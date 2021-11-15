@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BaseResponse {
+struct BaseResponse: Codable {
     
     var data: [Hotel]?
     var status: Int?
