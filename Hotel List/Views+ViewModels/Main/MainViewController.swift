@@ -15,26 +15,47 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Hide empty cells in tableview
+        tableview.tableFooterView = UIView()
+        
+        // Fetch items
+        itemsRequest()
     }
     
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     
+    // NumberOfRows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainVM.data.count
+        return mainVM.dataArray?.count ?? 0
     }
     
+    // Cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainCustomCell
-        cell.cellConfiguration(item: mainVM.data[indexPath.row])
+        cell.cellConfiguration(item: (mainVM.dataArray?[indexPath.row])!)
         return cell
     }
     
+    // Handle cell select
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsViewController
-        detailsVC.item = mainVM.data[indexPath.row]
+        detailsVC.item = (mainVM.dataArray?[indexPath.row])!
         self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    
+}
+
+extension MainViewController {
+    
+    func itemsRequest() {
+        mainVM.itemsNetworkRequest(completion: { success in
+            if success {
+                self.tableview.reloadData()
+            }
+        })
     }
     
 }
