@@ -8,5 +8,6 @@ target 'Hotel List' do
   # Pods for Hotel List
   pod 'SDWebImage'
   pod 'Alamofire'
+  pod "RappleProgressHUD" 
 
 end
